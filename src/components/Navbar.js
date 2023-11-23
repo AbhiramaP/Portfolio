@@ -42,7 +42,7 @@ function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/" onClick={() => hamburger(false)}>
+                    <Link to="/about" onClick={() => hamburger(false)}>
                       About
                     </Link>
                   </li>
