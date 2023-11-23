@@ -63,10 +63,7 @@ function Contact() {
           </form>
         </div>
       </div>
-      <footer>
-        <br></br><br></br><br></br><br></br><br></br><br></br>
-        <p> &#169;This page is created by Abhirama</p>
-      </footer>
+      
     </>
   );
 }

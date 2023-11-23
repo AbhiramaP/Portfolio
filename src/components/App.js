@@ -20,6 +20,10 @@ function App() {
      <Route path='/education' element={<Education/>}/>
      <Route path='/contact' element={<Contact/>}/>
      </Routes>
+     <footer>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
+        <p> &#169;This page is created by Abhirama</p>
+      </footer>
      </BrowserRouter>
     </div>
   );
