@@ -40,7 +40,7 @@ function Contact() {
               placeholder="Please enter Your Name"/>
             <label>Email:</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="Email"
               placeholder="Please enter Your email"/>
