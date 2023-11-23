@@ -6,6 +6,7 @@ import Skills from './Skills';
 import About from './About';
 import Education from './Education';
 import Contact from './Contact';
+import Certificates from './Certificates';
 function App() {
   return (
     <div className="Navbar">
@@ -14,6 +15,7 @@ function App() {
      <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='/skills' element={<Skills/>}/>
+     <Route path='/certificates' element={<Certificates/>}/>
      <Route path='/about' element={<About/>}/>
      <Route path='/education' element={<Education/>}/>
      <Route path='/contact' element={<Contact/>}/>

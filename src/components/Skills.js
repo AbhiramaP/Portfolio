@@ -91,7 +91,7 @@ function Skills() {
             </div>
           </div>
         </div>
-      </center>
+     </center>
     </>
   );
 }

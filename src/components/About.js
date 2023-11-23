@@ -15,7 +15,7 @@ function About() {
                  <em>I am a <span>Developer</span><br></br>
                   I am Abhirama P, currently pursuing my BE in Computer Science
                   and Engineering from Canara Engineering College.currently I am in 
-                  my 5th sem.I am an enthusiastic learner.I have done 2-3 projects in
+                  my 5th sem.I am an enthusiastic learner.I have done 2 projects in
                   Front End.I have participated in inter-college fests and hackathons.</em>
                 </p>
               </div>
@@ -23,6 +23,6 @@ function About() {
         </div>
       </div>
     </>
-  );
+  );  
 }
 export default About;

@@ -8,6 +8,7 @@ p{
 }
 h1{
   color:white;
+  text-align: center;
 }
 body{
 background-color:#151e3d;
@@ -40,10 +41,12 @@ background-color:#151e3d;
   color: blue;
 }
 .sidebar a{
-  color:white;
+  color:lime;
+  text-decoration: none;
+  font-size: 15px;
 }
 .sidebar a:hover {
-  color:aqua;
+  color:yellow;
 }
 .nav-list {
   list-style: none;
@@ -140,7 +143,8 @@ b{
   width: 100px;
 }
 .container{
-  display:grid;
+  display:flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -167,7 +171,7 @@ b{
   width: 90px;
   height: 90px;
   position: relative;
-  border-radius: 45px;
+  border-radius:100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,6 +179,7 @@ b{
 .skill-title h3{
   color:white;
   margin: 0.5rem;
+  font-size:17px;
 }
 .education{
   color:yellow;
@@ -248,7 +253,9 @@ footer p{
   font-size:25px;
   font-weight: bold;
   background-color:black;
+  margin-bottom: 0;
 }
+
 @media screen and (max-width: 768px) {
   .menu-icon {
       display: block;
@@ -277,6 +284,14 @@ footer p{
   .ham{
     display: block;
   }
+  .inner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img{
+    width:5%;
+    height:5%;
+  }
   #menu-toggle:checked + .menu-icon + .nav-list {
     display: flex;
 }
@@ -287,5 +302,8 @@ footer p{
   }
   .education th,td{
     font-size: 12px;
+  }
+  .header{
+    margin: auto;
   }
 }

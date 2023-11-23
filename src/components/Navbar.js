@@ -21,7 +21,8 @@ function Navbar() {
           <ul className="nav-list">
             {locpath === "/" ? " " : <Link to="/">Home</Link>}
             {locpath === "/about" ? " " : <Link to="/about">About</Link>}
-            {locpath === "/skills" ? " " : <Link to="/skills">Skills</Link>}                    
+            {locpath === "/skills" ? " " : <Link to="/skills">Skills</Link>}              
+            {locpath === "/cerificates" ? " " : <Link to="/certificates">Certificates</Link>}              
             {locpath === "/education" ? " " : <Link to="/education">Education</Link>}
             {locpath === "/contact" ? " " : <Link to="/contact">Contact</Link>}           
             <li className="hamburger">
@@ -35,6 +36,11 @@ function Navbar() {
                   &times;
                 </span>
                 <ul className="side-list">
+                <li>
+                    <Link to="/" onClick={() => hamburger(false)}>
+                      Home
+                    </Link>
+                  </li>
                   <li>
                     <Link to="/" onClick={() => hamburger(false)}>
                       About
@@ -43,6 +49,11 @@ function Navbar() {
                   <li>
                     <Link to="/skills" onClick={() => hamburger(false)}>
                       Skills
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/certificates" onClick={() => hamburger(false)}>
+                      Certificates
                     </Link>
                   </li>
                   <li>

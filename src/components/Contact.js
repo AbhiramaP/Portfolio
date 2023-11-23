@@ -1,21 +1,24 @@
 import "../css/Nav.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs, { send } from "@emailjs/browser";
+import Loader from "./Loader";
 function Contact() {
   const form = useRef();
-
+  const [loader,setLoader]=useState(true);
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoader(false);
     emailjs
       .sendForm(
         "service_fgtgr7b",
         "template_monk482",
         form.current,
         "kX7FiGDLE8zF4NyhS"
-      )
+      ) 
       .then(
         (result) => {
-          alert("Message sent");
+          alert("Message sent"); 
+          setLoader(true);
           form.current.reset();
         },
         (error) => {
@@ -48,11 +51,22 @@ function Contact() {
               name="Suggestion"
               placeholder="Any suggestions??"/>
             <div className="btn">
-              <button type="submit">Reach out to me</button>
+              {
+                loader ? (
+                  <>
+                    <button type="submit">Send message</button>
+                  </>
+                ) : (
+                  <Loader/>
+                )}
             </div>
           </form>
         </div>
       </div>
+      <footer>
+        <br></br><br></br><br></br><br></br><br></br><br></br>
+        <p> &#169;This page is created by Abhirama P </p>
+      </footer>
     </>
   );
 }
