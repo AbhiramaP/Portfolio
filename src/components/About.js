@@ -7,7 +7,7 @@ function About() {
         <div class="container-about">
           <div class="row">
             <div class="about-col-1">
-              <img src={me} width={300} height={400}  alt="about"></img>
+              <img className="myself" src={me} width={300} height={400}  alt="about"></img>
             </div>
               <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>

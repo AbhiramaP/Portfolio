@@ -33,7 +33,7 @@ function Contact() {
           <h1 className="con">Contact Me</h1>
           <form ref={form} onSubmit={sendEmail}>
             <label>Name:</label>
-            <input
+            <input className="un"
               type="text"
               id="name"
               name="Username"
@@ -65,7 +65,7 @@ function Contact() {
       </div>
       <footer>
         <br></br><br></br><br></br><br></br><br></br><br></br>
-        <p> &#169;This page is created by Abhirama P </p>
+        <p> &#169;This page is created by Abhirama</p>
       </footer>
     </>
   );

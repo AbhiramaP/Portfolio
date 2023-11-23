@@ -99,7 +99,7 @@ background-color:#151e3d;
   flex-wrap: wrap;
 }
 .about-col-1{
-  flex-basis: 40%;
+  flex-basis:30%;
 }
 .about-col-1 img{
   border-radius: 15px;
@@ -255,7 +255,9 @@ footer p{
   background-color:black;
   margin-bottom: 0;
 }
-
+footer{
+  width:100;
+}
 @media screen and (max-width: 768px) {
   .menu-icon {
       display: block;
@@ -305,5 +307,35 @@ footer p{
   }
   .header{
     margin: auto;
+  }
+}
+@media screen and (max-width:320px){
+  .row{
+    padding-left: 76px;
+  }
+  .container{
+    padding-left:50px;
+  }
+  .inner{
+    padding-left: 76px;
+  }
+  footer{
+    padding-left: 70px;
+  }
+  .con{
+    padding-left: 65px;
+  }
+  form{
+    padding-left:45px;
+    width: 150px;
+  }
+  .cert h1{
+    padding-left: 75px;
+  }
+  .education{
+    padding-left: 50px;
+  }
+  .school{
+    padding-left:80px;
   }
 }

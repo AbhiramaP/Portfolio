@@ -13,7 +13,7 @@ function Card({skills}){
     }
   return(
     <>
-    <div>
+    <div className="cert">
     <h1>{skills.h}</h1>
     <img src={img(skills.i)}
     width={400}
